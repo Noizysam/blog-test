@@ -10,6 +10,7 @@ function AddPostForm() {
   const textInputTitleRef = useRef("samir")
   const textInputBodyRef = useRef(null)
   
+  // Submit post and add it to api
   const postSubmitHandler = (e) => {
     e.preventDefault()
     const enteredTitle = textInputTitleRef.current.value

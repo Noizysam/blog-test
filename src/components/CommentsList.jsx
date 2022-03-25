@@ -7,7 +7,7 @@ function CommentsList({comments, id}) {
   const textInputRef = useRef(null)
   const dispatch = useDispatch()
 
-  
+  // Submit comment and add it to post
   const commentSubmitHandler = (e) => {
     e.preventDefault()
     const enteredText = textInputRef.current.value

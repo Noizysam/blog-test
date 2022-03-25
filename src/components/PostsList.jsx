@@ -10,18 +10,20 @@ function PostsList() {
   const postList = useSelector(state => state.entities.posts.list)
   const dispatch = useDispatch()
 
+  // Load all posts from api
   useEffect(() => {
     dispatch(loadPosts())
   }, [dispatch])
 
 
+  // All posts, including delete and edit button's
   const posts = postList.map(post => {
       return (
         <div className='postBody' key={post.id}>
           <div className="post-delete">
             <button onClick={() => dispatch(deletePost(post.id))}>X</button>
           </div>
-          <Link className='link' to={`/updatePost/post/${post.id}`}>
+          <Link className='link' to={`/updatePost/post/${post.id}`} state ={{post}}>
             <div className="post-update">
               <AiFillEdit />
             </div>
