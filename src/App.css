@@ -1,38 +1,123 @@
-.App {
-  text-align: center;
+.link {
+  text-decoration: none;
+  color: #000
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main {
+  margin-left: 350px ;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.postBody {
+  position: relative;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.post-delete {
+  position: absolute;
+  left: -20px;
+  z-index: 1;
+}
+
+.post-delete button {
+  cursor: pointer;
+
+}
+
+.post-update {
+  position: absolute;
+  left: -20px;
+  top: 25px;
+  width: 13px;
+  height: 18px;
+  z-index: 1;
+  border: 1px #000 solid;
+  padding: 1px 5px;
+}
+
+
+
+.posts .link {
+  display: block;
+}
+
+.post {
+  border: 1px #000 solid;
+  width: 600px;
+  padding: 15px;
+  margin: 10px;
+  position: relative;
+}
+
+
+
+.post:hover {
+  background-color: #d3d3d3;
+}
+
+.postPage-info .post:hover {
+  background-color: #fff;
+}
+
+.postPage {
+  margin: 70px 0 0 350px;
+}
+
+.commentValue {
+  width: 500px;
+  padding: 10px;
+}
+
+.comments {
+  margin: 0 0 20px 0;
+}
+
+.addComment input {
+  display: block;
+  line-height: 28px;
+  margin: 10px 0;
+}
+
+.addPost {
+  margin: 70px 0 0 400px;
+}
+
+.addPostForm, .updatePostForm {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.input-title {
+  width: 300px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input-body {
+  width: 300px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.backButton {
+  margin-bottom: 20px;
+}
+
+.backButton .link{
+  border: 1px #000 solid;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+.backButton .link:hover {
+  background-color: #d3d3d3;
+}
+
+.newPost {
+  margin-bottom: 20px;
+}
+
+.newPost .link {
+  border: 1px #000 solid;
+  padding: 10px 15px;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #000;
+
 }
