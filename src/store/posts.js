@@ -22,7 +22,7 @@ const slice = createSlice({
 
     postUpdated: (posts, action) => {
       const index = posts.list.findIndex(post => post.id === action.payload.id)
-      posts.list[index] = {title: action.payload.title, body: action.payload.body}
+      posts.list[index] = {title: action.payload.title, body: action.payload.body, id: action.payload.id}
     }
   } 
 })
