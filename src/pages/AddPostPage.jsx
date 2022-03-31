@@ -3,7 +3,7 @@ import AddPostForm from '../components/AddPostForm'
 
 function AddPostPage() {
   return (
-    <div className='container'>
+    <div className="container">
       <div className="addPost">
         <AddPostForm />
       </div>
